@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import SignupFormModal from "./components/SignupFormModal";
 import LoginFormPage from "./components/LoginFormPage";
 import { authenticate } from "./store/session";
@@ -11,7 +11,7 @@ import UpdateUser from "./components/UpdateUserForm";
 import TopBar from "./components/TopBar";
 import ServersList from "./components/ServersList";
 import ChannelViewIndex from "./components/ChannelViewIndex";
-import { Redirect } from "react-router-dom/cjs/react-router-dom";
+// import { Redirect } from "react-router-dom/cjs/react-router-dom";
 import LandingPage from "./components/LandingPage";
 
 
@@ -32,7 +32,7 @@ function App() {
             <LandingPage />
           </Route>
           <Route exact path="/home">
-              
+
                 <ServerNavBar isLoaded={isLoaded} />
 
 
