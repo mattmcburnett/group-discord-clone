@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { login } from "../../store/session";
 import { useDispatch, useSelector } from "react-redux";
-import { Redirect, useHistory } from "react-router-dom";
+import { Redirect, useHistory, NavLink } from "react-router-dom";
 import './LoginForm.css';
-import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+// import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import backgroundImage from './discord-login-background.png'
 
 function LoginFormPage() {
