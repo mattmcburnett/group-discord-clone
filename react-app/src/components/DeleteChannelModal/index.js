@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import {useModal} from "../../context/Modal";
 import { deleteChannelThunk, getChannelsThunk, getOneChannelThunk } from "../../store/channel";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import "./DeleteChannelModal.css";
-import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+// import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 
 function DeleteChannelModal({channel}) {
     const dispatch = useDispatch()

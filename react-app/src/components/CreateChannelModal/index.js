@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useModal } from "../../context/Modal";
 import { createChannelThunk, getChannelsThunk } from "../../store/channel";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+// import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom";
 import "./CreateChannelModal.css";
 
 function NewChannelModal({ serverId }) {

@@ -1,11 +1,11 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { getServersThunk } from '../../store/server';
 import React, { useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import OpenCreateServerButton from '../OpenCreateServerButton';
 import NewServerModal from '../NewServerModal';
 import "./ServersList.css"
-import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+// import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 

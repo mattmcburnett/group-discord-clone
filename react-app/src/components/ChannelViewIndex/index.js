@@ -3,13 +3,13 @@ import { useSelector, useDispatch } from 'react-redux';
 import ServersList from '../ServersList';
 import Topbar from '../TopBar';
 import "./ChannelViewIndex.css"
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import { getOneServerThunk } from '../../store/server';
 import { getChannelsThunk, getOneChannelThunk } from '../../store/channel';
 import ChannelList from '../ChannelList';
 import ChannelMessages from '../ChannelMessages';
 import MembershipNavBar from '../MemberNavBar';
-import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+// import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 function ChannelViewIndex() {
     const {serverId, channelId } = useParams()

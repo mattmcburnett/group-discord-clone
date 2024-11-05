@@ -1,12 +1,12 @@
 import React from 'react';
-import { useHistory, NavLink } from 'react-router-dom';
+import { useHistory, NavLink, Redirect } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { useModal } from "../../context/Modal";
 import "./ServerNavBar.css"
 import { logout } from "../../store/session";
 import ServersList from '../ServersList';
 import Topbar from '../TopBar';
-import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+// import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import OpenCreateServerButton from '../OpenCreateServerButton';
 import NewServerModal from '../NewServerModal';
 

@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getDiscoverServersThunk, getServersThunk } from '../../store/server';
 import { createMembershipThunk } from '../../store/membership';
-import { useHistory } from "react-router-dom";
+import { useHistory, Redirect } from "react-router-dom";
 import ServersList from '../ServersList';
 import "./DiscoverServersIndex.css"
 import { logout } from "../../store/session";
-import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+// import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 function DiscoverServersIndex() {

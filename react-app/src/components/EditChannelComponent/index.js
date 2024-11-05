@@ -5,7 +5,7 @@ import { getChannelsThunk, updateChannelThunk } from "../../store/channel";
 import "./EditChannelComponent.css";
 import OpenDeleteChannelButton from "../OpenDeleteChannelButton";
 import DeleteChannelModal from "../DeleteChannelModal";
-import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import { useHistory } from "react-router-dom";
 
 function EditChannelModal({ channel }) {
     const dispatch = useDispatch()
