@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Routes, Redirect } from "react-router-dom";
 import SignupFormModal from "./components/SignupFormModal";
 import LoginFormPage from "./components/LoginFormPage";
 import { authenticate } from "./store/session";
@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       {/* <Navigation isLoaded={isLoaded} /> */}
-        <Switch>
+        <Routes>
           <Route exact path='/'>
             <LandingPage />
           </Route>
@@ -59,7 +59,7 @@ function App() {
           </Route>
           <Route path="/users/:userId">
           </Route>
-        </Switch>
+        </Routes>
 
 
     </>
